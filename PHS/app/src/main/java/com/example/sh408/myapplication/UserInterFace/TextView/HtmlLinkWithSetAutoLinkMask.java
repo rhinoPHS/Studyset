@@ -1,3 +1,4 @@
+//링크
 package com.example.sh408.myapplication.UserInterFace.TextView;
 
 import android.support.v7.app.AppCompatActivity;
