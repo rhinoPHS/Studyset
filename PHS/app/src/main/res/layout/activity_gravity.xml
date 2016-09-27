@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gravity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sh408.myapplication.UserInterFace.TextView.gravity">
+
+    <EditText
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:background="@color/colorAccent"
+        android:gravity="left|top"
+        android:inputType="textPersonName"
+        android:text="왼쪽 위"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="19dp"
+        android:id="@+id/editText"
+        android:textAllCaps="false" />
+
+    <EditText
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:background="@color/colorAccent"
+        android:gravity="right|top"
+        android:inputType="textPersonName"
+        android:text="오른쪽 위"
+        android:ems="10"
+        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignStart="@+id/editText2"
+        android:layout_marginTop="41dp"
+        android:id="@+id/editText3" />
+
+    <EditText
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:background="@color/colorAccent"
+        android:gravity="right|bottom"
+        android:inputType="textPersonName"
+        android:text="오른쪽 아래"
+        android:ems="10"
+        android:layout_below="@+id/editText3"
+        android:layout_alignRight="@+id/editText3"
+        android:layout_alignEnd="@+id/editText3"
+        android:layout_marginTop="39dp"
+        android:id="@+id/editText4" />
+
+    <EditText
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:background="@color/colorAccent"
+        android:gravity="left|bottom"
+        android:inputType="textPersonName"
+        android:text="왼쪽 아래"
+        android:ems="10"
+        android:layout_marginTop="33dp"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
+    <EditText
+        android:layout_width="200dip"
+        android:layout_height="50dip"
+        android:background="@color/colorAccent"
+        android:gravity="left|center"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:layout_below="@+id/editText4"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignStart="@+id/editText4"
+        android:layout_marginTop="27dp"
+        android:id="@+id/editText5" />
+</RelativeLayout>

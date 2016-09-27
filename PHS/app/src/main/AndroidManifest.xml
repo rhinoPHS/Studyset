@@ -10,15 +10,17 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity" />
         <activity android:name=".UserInterFace.TextView.HtmlLinkWithSetAutoLinkMask" />
-        <activity android:name=".UserInterFace.TextView.setEllipsize"></activity>
-        <activity android:name=".UserInterFace.TextView.setEllipsizeMarquee"></activity>
-        <activity android:name=".UserInterFace.TextView.Style">
+        <activity android:name=".UserInterFace.TextView.setEllipsize" />
+        <activity android:name=".UserInterFace.TextView.setEllipsizeMarquee" />
+        <activity android:name=".UserInterFace.TextView.Style"></activity>
+        <activity android:name=".UserInterFace.TextView.gravity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Main2Activity"></activity>
     </application>
 
 </manifest>
