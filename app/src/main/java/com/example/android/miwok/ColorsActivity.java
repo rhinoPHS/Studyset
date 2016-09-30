@@ -17,6 +17,7 @@ package com.example.android.miwok;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 
 public class ColorsActivity extends AppCompatActivity {
 
@@ -24,5 +25,11 @@ public class ColorsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_colors);
+
+        int [] words = new int[10];
+        for(int i = 0; i < 10; i++){
+            words[i] = i+1;
+        }
+        Log.v("ColorsActivity","Word at index 0 : " + words[0]);
     }
 }
