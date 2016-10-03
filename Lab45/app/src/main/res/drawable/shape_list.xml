@@ -5,10 +5,11 @@
 
     <solid android:color="#1061380B"/>
 
-    <stroke
-        android:width="1dp"
-        android:color="#000000">
-    </stroke>
+<gradient
+    android:type="linear"
+    android:startColor="#1061380B"
+    android:centerColor="#4061380B"
+    android:endColor="#1061380B"/>
 
     <padding
         android:left="10dp"
