@@ -61,6 +61,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
         // so that it can be shown in the ListView
 
         ImageView imageView = (ImageView)listItemView.findViewById(R.id.image);
+
         if(currentWord.hasImage()){
             imageView.setImageResource(currentWord.getmImageResourceId());
             imageView.setVisibility(View.VISIBLE);
