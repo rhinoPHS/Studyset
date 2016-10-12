@@ -10,21 +10,23 @@ import android.view.View;
 /**
  * Created by sh408 on 2016-10-12.
  */
-public class MyView extends View {
+public class MyView extends View implements View.OnTouchListener{
 
-    int x,y;
+    private int x,y;
+    private MyListener listener;
 
     public MyView(Context context) {
         super(context);
         setBackgroundColor(Color.YELLOW);
+        this.setOnTouchListener((View.OnTouchListener)this);
     }
 
-    public void setX(int x) {
-        this.x = x;
+    public interface MyListener{
+        public void onChanged();
     }
 
-    public void setY(int y) {
-        this.y = y;
+    public void  setMyViewListener(MyListener lis){
+        listener = lis;
     }
 
     @Override
@@ -33,5 +35,13 @@ public class MyView extends View {
         paint.setTextSize(30);
         canvas.drawText("("+ x + "," + y + ")에서 이벤트 발생",x,y,paint);
         super.onDraw(canvas);
+    }
+
+    @Override
+    public boolean onTouch(View v, MotionEvent event) {
+        x = (int)event.getX();
+        y = (int)event.getY();
+        invalidate();
+        return super.onTouchEvent(event);
     }
 }

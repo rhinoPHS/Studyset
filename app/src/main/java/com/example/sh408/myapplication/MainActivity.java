@@ -12,21 +12,29 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //setContentView(R.layout.activity_main);
         mv = new MyView(this);
+        mv.setMyViewListener(new MyView.MyListener(){
+
+            @Override
+            public void onChanged() {
+
+            }
+        });
+
         setContentView(mv);
 
-        mv.setOnTouchListener(lis);
+//        mv.setOnTouchListener(lis);
     }
 
-    View.OnTouchListener lis = new View.OnTouchListener() {
-        @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                mv.setX((int)event.getX());
-                mv.setY((int)event.getY());
-                v.invalidate();
-                return false;
-            }
+//    View.OnTouchListener lis = new View.OnTouchListener() {
+//        @Override
+//            public boolean onTouch(View v, MotionEvent event) {
+//                mv.setX((int)event.getX());
+//                mv.setY((int)event.getY());
+//                v.invalidate();
+//                return false;
+//            }
 
-    };
+//    };
 
 //    @Override
 //    public boolean onTouchEvent(MotionEvent event) {
